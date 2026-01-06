@@ -18,9 +18,9 @@ import { useRef } from "react"
 // extend({ PortalMaterial })
 
 const Experience = () => {
-    const texture = useTexture("/Baked.png")
+    const texture = useTexture("./Baked.png")
     //texture.flipY = false
-    const { nodes } = useGLTF("/Portal3.glb")
+    const { nodes } = useGLTF("./Portal3.glb")
     const portalLight = useRef()
     useFrame((state, delta) => {
        //portalLight.current.uniforms.uTime.value += delta\
